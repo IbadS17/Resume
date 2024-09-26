@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <title>Md Ibaad Resume</title>
+  </head>
+  <body class="bg-gray-100">
+      <button
+      id="downloadBtn"
+      class="fixed top-4 right-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+    >
+      Download PDF
+    </button>
+    <div class="max-w-4xl mx-auto p-8 bg-white shadow-lg">
+      <header class="mb-8">
+        <h1 class="text-4xl font-bold text-gray-800">Mohd Ibaad</h1>
+        <p class="text-xl text-gray-600 mt-2">Full Stack Developer</p>
+        <div class="flex flex-wrap gap-4 mt-4">
+          <div
+            class="flex items-center text-gray-600 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+          >
+            <span class="w-4 h-4 mr-2">📧</span>
+            <a
+              href="mailto:ibads66585@gmail.com"
+              target="_blank"
+              class="hover:text-blue-600"
+              >ibads66585@gmail.com</a
+            >
+          </div>
+          <div
+            class="flex items-center text-gray-600 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+          >
+            <span class="w-4 h-4 mr-2">📞</span>
+            <a href="tel:+917718968240" class="hover:text-blue-600"
+              >77189 68240</a
+            >
+          </div>
+          <div
+            class="flex items-center text-gray-600 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+          >
+            <span class="w-4 h-4 mr-2">🌐</span>
+            <a
+              href="https://ibads17.github.io/Personal_Portfolio/"
+              class="hover:text-blue-600"
+              target="_blank"
+              >Portfolio</a
+            >
+          </div>
+          <div
+            class="flex items-center text-gray-600 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+          >
+            <img class="w-4 h-4 mr-2 rounded-full" src="images/github.png"></img>
+            <a
+              href="https://github.com/IbadS17"
+              class="hover:text-blue-600"
+              target="_blank"
+              >Github</a
+            >
+          </div>
+          <div
+            class="flex items-center text-gray-600 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+          >
+            <img class="w-4 h-4 mr-2 rounded-md" src="images/linknedin.png"></img>
+            <a
+              href="https://www.linkedin.com/in/mohd-ibaad-shaikh-99849a1a6/"
+              target="_blank"
+              class="hover:text-blue-600"
+              >LinkedIN</a
+            >
+          </div>
+          <div class="flex items-center text-gray-600">
+            <span class="w-4 h-4 mr-2">📍</span>
+            <span>Mumbai, Maharashtra</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="mb-8">
+        <h2
+          class="text-2xl font-semibold text-gray-800 border-b-2 border-gray-300 pb-2 mb-4"
+        >
+          Summary
+        </h2>
+        <p class="text-gray-700">
+          Experienced Full Stack Developer with a passion for creating
+          efficient, scalable, and user-friendly web applications. Proficient in
+          modern JavaScript frameworks and cloud technologies.
+        </p>
+      </section>
+      <section class="pb-6">
+        <h2
+          class="text-2xl font-semibold text-gray-800 border-b-2 border-gray-300 pb-2 mb-4"
+        >
+          Skills
+        </h2>
+
+        <p class="text-xl block font-semibold text-gray-800 pb-3 px-3">
+          Frontend
+        </p>
+        <ul class="grid grid-cols-2 md:grid-cols-3 gap-2">
+          <li
+            class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+          >
+            JavaScript
+          </li>
+          <li
+            class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+          >
+            ReactJS
+          </li>
+          <li
+            class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+          >
+            NextJS 14
+          </li>
+        </ul>
+
+        <p class="text-xl block font-semibold text-gray-800 pb-3 px-3 mt-4">
+          Backend
+        </p>
+        <ul class="grid grid-cols-2 md:grid-cols-3 gap-2">
+          <li
+            class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+          >
+            Python
+          </li>
+          <li
+            class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+          >
+            Java (SpringBoot)
+          </li>
+        </ul>
+
+        <p class="text-xl block font-semibold text-gray-800 pb-3 px-3 mt-4">
+          DevOps
+        </p>
+        <ul class="grid grid-cols-2 md:grid-cols-3 gap-2">
+          <li
+            class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+          >
+            AWS
+          </li>
+          <li
+            class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+          >
+            Docker
+          </li>
+          <li
+            class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+          >
+            Git
+          </li>
+        </ul>
+
+        <p class="text-xl block font-semibold text-gray-800 pb-3 px-3 mt-4">
+          Database
+        </p>
+        <ul class="grid grid-cols-2 md:grid-cols-3 gap-2">
+          <li
+            class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+          >
+            SQL
+          </li>
+          <li
+            class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+          >
+            MongoDB
+          </li>
+          <li
+            class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+          >
+            PostgresSQL
+          </li>
+        </ul>
+      </section>
+
+      <section class="mb-8">
+        <h2
+          class="text-2xl font-semibold text-gray-800 border-b-2 border-gray-300 pb-2 mb-4"
+        >
+          Projects
+        </h2>
+        <div class="mb-6">
+          <a
+            href="https://github.com/IbadS17/tranquilty-frontend"
+            class="text-xl font-semibold text-gray-800 hover:underline hover:text-blue-600 cursor-pointer"
+          >
+            Tranquility Tech
+          </a>
+          <ul class="list-disc list-inside mt-2 text-gray-700 pb-6">
+            <p>
+              <b>Tech Stack:</b> AngularJS, Tailwind CSS, Java Springboot,MySQL,
+            </p>
+            <li>
+              Developed a platform providing internship opportunities,skill Test
+              and web development services.
+            </li>
+            <li>
+              The website features an - internship listing ,Quizzes,
+              userAuthentication,Authorization ,Admin dashboard , Analytical and
+              website development(service).
+            </li>
+          </ul>
+          <a
+            href="https://ibads17.github.io/PassOP/"
+            class="text-xl font-semibold text-gray-800 hover:underline hover:text-blue-600 cursor-pointer pt-6"
+          >
+            Password Manager
+          </a>
+          <ul class="list-disc list-inside mt-2 text-gray-700">
+            <p><b>Tech Stack:</b> React Vite</p>
+            <li>
+              Developed a web application using ReactJS, Which stores your
+              password on Local storage
+            </li>
+          </ul>
+        </div>
+        <div class="mb-6">
+          <a
+            href="https://github.com/IbadS17/Ecommerce-site"
+            class="text-xl font-semibold text-gray-800 hover:underline hover:text-blue-600 cursor-pointer"
+            >Ecommerce Website</a
+          >
+          <ul class="list-disc list-inside mt-2 text-gray-700">
+            <p>
+              <b>Tech Stack:</b> Node Js, Express Js, Next Js 13, Tailwind CSS,
+              Next Auth, Redux, MongoDB, Cloudinary, Typescript
+            </p>
+            <li>
+              Frontend development using Next Js for creating interactive,
+              intuitive and responsive user interfaces.
+            </li>
+            <li>
+              Backend implementation built using Node.js and Express.js to
+              handle API integrations, and database operations.
+            </li>
+            <li>
+              Database management utilized MongoDB as the database to store and
+              manage product information and user data.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb-8">
+        <h2
+          class="text-2xl font-semibold text-gray-800 border-b-2 border-gray-300 pb-2 mb-4"
+        >
+          Education
+        </h2>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800">
+            Bachelor of Science in Information Technology
+          </h3>
+          <p class="text-gray-600 italic">
+            University of Mumbai | Graduated: May 2025
+          </p>
+        </div>
+      </section>
+    </div>
+    <script>
+      document.getElementById("download-btn").addEventListener("click", () => {
+        const element = document.querySelector(".max-w-4xl");
+        html2pdf(element, {
+          margin: 8,
+          filename: "Mohd_Ibaad_Resume.pdf",
+          image: { type: "jpeg", quality: 0.98 },
+          html2canvas: { scale: 2 },
+          jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+        });
+      });
+    </script>
+  </body>
+</html>
